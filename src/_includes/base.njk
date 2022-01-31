@@ -16,7 +16,11 @@ img {margin-bottom: -8px;}
 </head>
 
 <body class="w3-content w3-black" style="max-width:1500px;">
+    {% if '/trips' in page.url %}
+    {% include 'header_single.njk' %}
+    {% else %}
     {% include 'header.njk' %}
+    {% endif %}
     {{ content | safe }}
     {% include 'footer.njk' %}
 </body>

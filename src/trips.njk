@@ -1,0 +1,47 @@
+--- 
+title : Limostines Vej | TURE
+layout: 'base.njk'
+---
+
+<!-- LIMO APP Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/img/app-intro.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Basic Turen</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Lidt af det hele</b></h1>
+      <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Ture Section -->
+<section class="w3-padding-64 w3-center w3-white">
+  <h1 class="w3-jumbo"><b>LIMO TURE</b></h1>
+  <p class="w3-large">Vælg en tur der passer til din dag</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    {%- for trips in collections.trips -%}
+      
+    {%- endfor -%}
+    <!-- <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Cruise</li>
+        <li class="w3-padding-16"><b>50</b> Photos</li>
+        <li class="w3-padding-16"><b>2</b> Flasker</li>
+        <li class="w3-padding-16"><b>1</b> Ramme</li>
+        <li class="w3-padding-16"><b>Hjemtur</b> tilkøbes</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">€ 25</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> JA TAK</button>
+        </li>
+      </ul>
+    </div> -->
+    
+  </div> <!-- Slut row -->
+  <br>
+</section>
